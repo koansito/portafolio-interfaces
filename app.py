@@ -145,9 +145,10 @@ html, body, [class*="css"] {
     font-size: 1.1rem;
     color: #888899;
     max-width: 560px;
-    margin: 0 auto 3rem;
+    margin: 0 auto 3rem auto;
     line-height: 1.7;
     font-weight: 400;
+    text-align: center;
 }
 
 /* ── Stats bar ── */
@@ -335,30 +336,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ─── Stats ─────────────────────────────────────────────────────────────────────
-total = len(PROJECTS)
-tags_all = set(t for p in PROJECTS for t in p["tags"])
-multimodal_count = sum(1 for p in PROJECTS if any(t in ["Multimodal", "OCR", "Audio", "Imagen", "Entrada Visual"] for t in p["tags"]))
 
-st.markdown(f"""
-<div class="stats-bar">
-    <div class="stat-item">
-        <span class="stat-number">{total}</span>
-        <span class="stat-label">Proyectos</span>
-    </div>
-    <div class="stat-item">
-        <span class="stat-number">{len(tags_all)}</span>
-        <span class="stat-label">Tecnologías</span>
-    </div>
-    <div class="stat-item">
-        <span class="stat-number">{multimodal_count}</span>
-        <span class="stat-label">Apps Multimodales</span>
-    </div>
-    <div class="stat-item">
-        <span class="stat-number">☁️</span>
-        <span class="stat-label">Streamlit Cloud</span>
-    </div>
-</div>
-""", unsafe_allow_html=True)
 
 # ─── Grid of projects ──────────────────────────────────────────────────────────
 st.markdown('<div class="section-title">Interfaces desplegadas</div>', unsafe_allow_html=True)
