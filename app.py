@@ -141,14 +141,19 @@ html, body, [class*="css"] {
     margin-bottom: 1rem;
 }
 
+.hero-section p, .hero-section div {
+    text-align: center !important;
+}
+
 .hero-sub {
     font-size: 1.1rem;
     color: #888899;
     max-width: 560px;
-    margin: 0 auto 3rem auto;
+    margin: 0 auto 3rem auto !important;
     line-height: 1.7;
     font-weight: 400;
-    text-align: center;
+    text-align: center !important;
+    display: block;
 }
 
 /* ── Stats bar ── */
@@ -327,7 +332,7 @@ st.markdown("""
 <div class="hero-section">
     <div class="hero-badge">📡 Portafolio Académico — Interfaces Multimodales</div>
     <h1 class="hero-title">Interfaces<br>Multimodales</h1>
-    <p class="hero-sub">
+    <p class="hero-sub" style="text-align:center; margin-left:auto; margin-right:auto; width:100%;">
         Colección de aplicaciones desarrolladas en el curso de
         Creación de Interfaces Multimodales, desplegadas en Streamlit Cloud.
         Cada proyecto explora distintos canales de entrada y salida para el usuario.
