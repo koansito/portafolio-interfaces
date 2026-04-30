@@ -2,8 +2,8 @@ import streamlit as st
 
 # ─── Page config ───────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="Portafolio | Clase IA",
-    page_icon="🧠",
+    page_title="Portafolio | Interfaces Multimodales",
+    page_icon="📡",
     layout="wide",
     initial_sidebar_state="collapsed",
 )
@@ -12,81 +12,81 @@ st.set_page_config(
 PROJECTS = [
     {
         "title": "INTRO",
-        "emoji": "🚀",
-        "desc": "Aplicación introductoria al ecosistema de Streamlit e inteligencia artificial. Primer contacto con el despliegue de apps interactivas en la nube.",
-        "tags": ["Streamlit", "Python", "Intro"],
+        "emoji": "📡",
+        "desc": "Introducción al curso de Creación de Interfaces Multimodales. Primera interfaz desplegada en Streamlit: exploración del entorno de desarrollo y estructura básica de una app interactiva.",
+        "tags": ["Streamlit", "Python", "Interfaz"],
         "url": "https://gwvr56pnwfqfosnjqtziws.streamlit.app/",
         "color": "#FF6B6B",
     },
     {
         "title": "IMM1",
-        "emoji": "📊",
-        "desc": "Módulo de procesamiento y visualización de datos. Exploración de técnicas de análisis estadístico con interfaz interactiva.",
-        "tags": ["Datos", "Visualización", "Streamlit"],
+        "emoji": "🖥️",
+        "desc": "Primera práctica de Interfaces Multimodales. Construcción de una interfaz que integra múltiples canales de entrada y salida de datos para el usuario.",
+        "tags": ["Multimodal", "Interfaz", "Streamlit"],
         "url": "https://xh64y7bekcxgq5fkwgdiaz.streamlit.app/",
         "color": "#4ECDC4",
     },
     {
         "title": "TRADUCTOR",
         "emoji": "🌐",
-        "desc": "Traductor multilingüe potenciado por IA. Permite convertir texto entre múltiples idiomas de forma instantánea usando modelos de lenguaje.",
-        "tags": ["NLP", "Traducción", "API"],
+        "desc": "Interfaz multimodal de traducción de texto entre idiomas. El usuario interactúa con la app a través de entradas de texto y recibe salidas en tiempo real, demostrando la integración de APIs externas en interfaces web.",
+        "tags": ["Interfaz", "API", "Web"],
         "url": "https://traductorclase.streamlit.app/",
         "color": "#45B7D1",
     },
     {
         "title": "ANÁLISIS DE TEXTO",
-        "emoji": "📝",
-        "desc": "Herramienta para el análisis profundo de textos: frecuencia de palabras, estadísticas lingüísticas, y exploración de corpus.",
-        "tags": ["NLP", "Análisis", "Lingüística"],
+        "emoji": "📊",
+        "desc": "Interfaz para el análisis y visualización de texto. Demuestra cómo presentar datos textuales de forma gráfica e interactiva: estadísticas, frecuencias y métricas accesibles desde una sola pantalla.",
+        "tags": ["Visualización", "Texto", "Dashboard"],
         "url": "https://3fvjcwghfpziwlbkzb76rd.streamlit.app/",
         "color": "#96CEB4",
     },
     {
         "title": "OCR",
         "emoji": "🔍",
-        "desc": "Reconocimiento óptico de caracteres (OCR). Extrae texto de imágenes y documentos escaneados con precisión usando visión por computadora.",
-        "tags": ["OCR", "Visión", "Extracción"],
+        "desc": "Interfaz de captura y lectura de imágenes mediante reconocimiento óptico de caracteres. El usuario carga una imagen como entrada y la app devuelve el texto extraído, integrando visión por computadora en una interfaz accesible.",
+        "tags": ["OCR", "Imagen", "Entrada Visual"],
         "url": "https://7ddscsw9wkqigw6gfrsh9u.streamlit.app/",
         "color": "#FFEAA7",
     },
     {
         "title": "OCR AUDIO",
         "emoji": "🎙️",
-        "desc": "Combinación de OCR y procesamiento de audio. Transcripción y extracción de contenido desde medios visuales y sonoros.",
-        "tags": ["OCR", "Audio", "Transcripción"],
+        "desc": "Interfaz multimodal que combina entrada visual (imagen) y salida auditiva (audio). Extiende el OCR convirtiendo el texto extraído en voz, ilustrando cómo múltiples canales sensoriales coexisten en una sola app.",
+        "tags": ["OCR", "Audio", "Multimodal"],
         "url": "https://ocraudio123.streamlit.app/",
         "color": "#DDA0DD",
     },
     {
         "title": "SENTIMENT A",
         "emoji": "💬",
-        "desc": "Análisis de sentimientos con IA. Clasifica textos como positivos, negativos o neutrales usando modelos de procesamiento de lenguaje natural.",
-        "tags": ["Sentimientos", "NLP", "Clasificación"],
+        "desc": "Interfaz para el análisis de sentimientos de textos. El usuario ingresa contenido y la app clasifica el tono emocional, mostrando resultados con visualizaciones claras e intuitivas.",
+        "tags": ["Análisis", "Visualización", "Texto"],
         "url": "https://sentimenta-zgj9xbbussvpvwxup6sqmc.streamlit.app/",
         "color": "#F0A500",
     },
     {
         "title": "TDF_ESP",
-        "emoji": "🇪🇸",
-        "desc": "Implementación de TF-IDF especializada para textos en español. Mide la relevancia de términos en documentos de lengua castellana.",
-        "tags": ["TF-IDF", "Español", "NLP"],
+        "emoji": "🗂️",
+        "desc": "Interfaz para calcular y visualizar relevancia de términos en documentos en español usando TF-IDF. Presenta tablas y gráficas interactivas que facilitan la exploración de corpus textuales.",
+        "tags": ["Visualización", "Español", "Dashboard"],
         "url": "https://tdfesp-lzgmqy9b2grfpuxx3iwfje.streamlit.app/",
         "color": "#E17055",
     },
     {
         "title": "TF-IDF",
         "emoji": "📈",
-        "desc": "Algoritmo clásico de recuperación de información. Calcula la importancia de palabras en un corpus mediante frecuencia de términos e inversa de documentos.",
-        "tags": ["TF-IDF", "IR", "Algoritmo"],
+        "desc": "Interfaz interactiva para explorar el algoritmo TF-IDF sobre cualquier colección de textos. El usuario introduce documentos y visualiza en tiempo real la importancia de cada término.",
+        "tags": ["Interactivo", "Algoritmo", "Dashboard"],
         "url": "https://movl6nt93wmqsujmlajxsa.streamlit.app/",
         "color": "#00B894",
     },
     {
         "title": "WORDCLOUD",
         "emoji": "☁️",
-        "desc": "Generador de nubes de palabras interactivo. Visualiza la frecuencia de términos en textos mediante representaciones gráficas impactantes.",
-        "tags": ["Visualización", "WordCloud", "Texto"],
+        "desc": "Generador interactivo de nubes de palabras. A partir de texto ingresado por el usuario, produce una representación visual inmediata — ejemplo claro de cómo una interfaz puede transformar datos crudos en comunicación visual efectiva.",
+        "tags": ["Visualización", "Interactivo", "Gráficas"],
         "url": "https://wordcloud-whywh4ohajhswjtyfxfoge.streamlit.app/",
         "color": "#6C5CE7",
     },
@@ -324,12 +324,12 @@ a { color: inherit !important; }
 # ─── Hero ──────────────────────────────────────────────────────────────────────
 st.markdown("""
 <div class="hero-section">
-    <div class="hero-badge">🎓 Portafolio Académico — IA & NLP</div>
-    <h1 class="hero-title">Proyectos<br>de Clase</h1>
+    <div class="hero-badge">📡 Portafolio Académico — Interfaces Multimodales</div>
+    <h1 class="hero-title">Interfaces<br>Multimodales</h1>
     <p class="hero-sub">
-        Colección de aplicaciones desarrolladas durante el curso de
-        Inteligencia Artificial y Procesamiento de Lenguaje Natural,
-        desplegadas en Streamlit Cloud.
+        Colección de aplicaciones desarrolladas en el curso de
+        Creación de Interfaces Multimodales, desplegadas en Streamlit Cloud.
+        Cada proyecto explora distintos canales de entrada y salida para el usuario.
     </p>
 </div>
 """, unsafe_allow_html=True)
@@ -337,7 +337,7 @@ st.markdown("""
 # ─── Stats ─────────────────────────────────────────────────────────────────────
 total = len(PROJECTS)
 tags_all = set(t for p in PROJECTS for t in p["tags"])
-nlp_count = sum(1 for p in PROJECTS if any(t in ["NLP", "Análisis", "Sentimientos", "Lingüística", "TF-IDF", "IR"] for t in p["tags"]))
+multimodal_count = sum(1 for p in PROJECTS if any(t in ["Multimodal", "OCR", "Audio", "Imagen", "Entrada Visual"] for t in p["tags"]))
 
 st.markdown(f"""
 <div class="stats-bar">
@@ -350,8 +350,8 @@ st.markdown(f"""
         <span class="stat-label">Tecnologías</span>
     </div>
     <div class="stat-item">
-        <span class="stat-number">{nlp_count}</span>
-        <span class="stat-label">Apps NLP</span>
+        <span class="stat-number">{multimodal_count}</span>
+        <span class="stat-label">Apps Multimodales</span>
     </div>
     <div class="stat-item">
         <span class="stat-number">☁️</span>
@@ -361,7 +361,7 @@ st.markdown(f"""
 """, unsafe_allow_html=True)
 
 # ─── Grid of projects ──────────────────────────────────────────────────────────
-st.markdown('<div class="section-title">Proyectos desplegados</div>', unsafe_allow_html=True)
+st.markdown('<div class="section-title">Interfaces desplegadas</div>', unsafe_allow_html=True)
 
 cols_per_row = 3
 rows = [PROJECTS[i:i+cols_per_row] for i in range(0, len(PROJECTS), cols_per_row)]
@@ -389,6 +389,6 @@ for row in rows:
 # ─── Footer ────────────────────────────────────────────────────────────────────
 st.markdown("""
 <div class="footer">
-    Construido con Streamlit · Curso de IA &amp; NLP · 2024–2025
+    Construido con Streamlit · Creación de Interfaces Multimodales · 2024–2025
 </div>
 """, unsafe_allow_html=True)
